@@ -22,7 +22,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="sm:flex hidden flex-row justify-end gap-4">
+      <div className="flex-row justify-end hidden gap-4 sm:flex">
         <CustomButton 
           btnType="button"
           title={address ? 'Create a campaign' : 'Connect'}
@@ -41,7 +41,7 @@ const Navbar = () => {
       </div>
 
       {/* Small screen navigation */}
-        <div className="sm:hidden flex justify-between items-center relative">
+        <div className="relative flex items-center justify-between sm:hidden">
         <div className="w-[40px] h-[40px] rounded-[10px] bg-[#2c2f32] flex justify-center items-center cursor-pointer">
             <img src={logo} alt="user" className="w-[60%] h-[60%] object-contain" />
           </div>
